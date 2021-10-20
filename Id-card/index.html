@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Id-card</title>
+    <script
+      src="https://kit.fontawesome.com/4b37b03f95.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .details {
+        margin-top: -40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .input {
+        width: 1000px;
+      }
+      input {
+        width: 100%;
+        padding: 7px 0;
+        text-align: center;
+        border: 2px solid #ff9292;
+      }
+      #user,
+      #book,
+      #circle {
+        position: relative;
+        top: 32.5px;
+        left: 1px;
+        padding: 8px 10px 8px 10px;
+        background-color: #ff9292;
+      }
+      button {
+        background-color: #ff9292;
+        padding: 7px 15px 7px 15px;
+        margin-top: 15px;
+        border: none;
+        border-radius: 5px;
+      }
+      .result {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+      .resultCard {
+        width: 250px;
+        height: 290px;
+        border: 1px solid #8f8fb6;
+      }
+      img {
+        width: 100%;
+      }
+      #name {
+        background-color: #e9ec08;
+        color: rgb(15, 15, 15);
+        font-size: 15px;
+        border-radius: 5px;
+        margin: 7px;
+        padding: 2px;
+      }
+      #course {
+        background-color: #0fa00f;
+        color: antiquewhite;
+        font-size: 15px;
+        border-radius: 5px;
+        margin: 7px;
+      }
+      #author {
+        background-color: #c40606;
+        color: antiquewhite;
+        font-size: 15px;
+        border-radius: 5px;
+        margin: 7px;
+        padding: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2 style="text-align: center">Get A Free course</h2>
+
+      <div class="details">
+        <div class="input">
+          <i id="user" class="fas fa-user"> </i>
+          <input id="add-name" type="text" />
+        </div>
+        <div class="input">
+          <i id="book" class="fas fa-book"> </i
+          ><input id="add-course" type="text" />
+        </div>
+
+        <div class="input">
+          <i id="circle" class="fas fa-user-circle"></i>
+          <input id="add-author" type="text" />
+        </div>
+
+        <button id="submit" type="submit">Submit</button>
+      </div>
+      <br />
+      <div class="result" style="display: flex; flex-direction: row">
+        <div class="resultCard">
+          <div class="img">
+            <img src="./images/1.jpg" alt="" />
+          </div>
+          <div class="infoCard">
+            <div class="name">
+              <span id="name">Name:</span>
+              <span>John Doe</span>
+            </div>
+            <br />
+            <div class="course">
+              <span id="course">Course:</span>
+              <span>CSS basics</span>
+            </div>
+            <br />
+            <div class="author">
+              <span id="author">Author:</span>
+              <span>Kim Den</span>
+            </div>
+            <br />
+          </div>
+        </div>
+        <br />
+      </div>
+    </div>
+    <script src="id.js"></script>
+  </body>
+</html>
